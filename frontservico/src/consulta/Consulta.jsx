@@ -1,5 +1,6 @@
 import './Consulta.css';
 import React, {useEffect, useState} from 'react';
+import axios from 'axios';
 
 function Consulta() {
 
@@ -12,7 +13,9 @@ function Consulta() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log(consulta)
+        axios.get("http://localhost:8080/endereco/consulta", consulta).then(result=>{
+            console.log(result);
+        });
     }
 
 
@@ -23,10 +26,10 @@ function Consulta() {
         <div className='col-2'>
           <div>
             <label className='form-label'>Digite um CEP</label>
-            <input onChange={handleChange} value={consulta.cep} name='cep' type="number" className='form-control' />
+            <input onChange={handleChange} value={consulta.cep} name='cep' type="text" className='form-control' />
           </div>
             <br/>
-          <input type="submit" class="btn btn-primary" value={'Buscar'} />
+          <input type="submit" className="btn btn-primary" value={'Buscar'}></input>
         </div>
       </form>
     </div>

@@ -11,6 +11,7 @@ API REST integrada com VIACEP
 ## Anotações:
 
 - @AllArgsConstructor
+- @Configuration
 - @EnableFeignClients
 - @FeignClient
 - @Getter
