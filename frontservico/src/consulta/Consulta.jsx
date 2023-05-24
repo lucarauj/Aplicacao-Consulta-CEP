@@ -28,7 +28,7 @@ function Consulta() {
       return; // Parar a execução do código se o CEP for inválido
     }
 
-    const url = "http://localhost:8080/endereco/consulta?cep=" + consulta.cep;
+    const url = "https://back-cep-production.up.railway.app/endereco/consulta?cep=" + consulta.cep;
 
     axios.get(url)
       .then(response => {
