@@ -1,3 +1,4 @@
+
 package com.br.cadastro.endereco.config;
 
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +12,8 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
                 .allowedOrigins("*")
-                .allowedMethods("*")
-                .allowedHeaders("*");
+                .allowedOriginPatterns("*")
+                .allowedHeaders("*")
+                .allowedMethods("*");
     }
 }

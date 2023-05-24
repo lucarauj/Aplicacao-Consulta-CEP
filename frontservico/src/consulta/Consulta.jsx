@@ -13,7 +13,10 @@ function Consulta() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        axios.get("http://localhost:8080/endereco/consulta", consulta).then(result=>{
+
+        const url = "http://localhost:8080/endereco/consulta?cep=" + consulta.cep;
+
+        axios.get(url, consulta).then(result=>{
             console.log(result);
         });
     }
