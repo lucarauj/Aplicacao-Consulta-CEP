@@ -1,0 +1,95 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 80px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.col-4 {
+  margin: 0 auto;
+}
+
+.form-control {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+td {
+  color: #555;
+}
+
+th:first-child,
+td:first-child {
+  width: 120px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ebebeb;
+}
